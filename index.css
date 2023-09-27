@@ -299,7 +299,29 @@ p {
     flex-direction: column;
     gap: 10px;
 }
-.primary-button {
+.contact__form span{
+    color: #ec6366;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0px;
+}
+.contact__form label {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0px;
+    color: #020402;
+}
+.contact__form input {
+    font-size: 18px;
+    color: #595959;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    padding: 8px 10px;
+}
+.contact__form .primary-button--submit {
     padding: 12px 32px;
     font-size: 16px;
     font-weight: 600;
@@ -309,7 +331,7 @@ p {
     text-decoration: none;
     color: #fff;
 }
-.primary-button:hover {
+.contact__form .primary-button--submit:hover {
     background-color: #26801d;
 }
 .contact__map-container {
@@ -343,7 +365,24 @@ p {
 .map__text-container img {
     width: 20px;
 }
-
+#trucazo {
+    opacity: 0;
+}
+@media screen and (max-width:768px) {
+    .contact {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 40px;
+    }
+    .contact__form-container {
+        width: 100%;
+    }
+    .contact__map-container {
+        width: 100%;
+    }
+}
 
 
 /* footer  */

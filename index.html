@@ -93,30 +93,54 @@
                 <h2>PLANIFICACIÓN SIN ESTRÉS</h2>
                 <h3>Tu Próxima Aventura Comienza Aquí</h3>
                 <p>Tu viaje de ensueño está a solo un paso de distancia. Descubre itinerarios personalizados que se adaptan perfectamente a tus gustos y deseos.</p>
-                <form id="miFormulario">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="telefono">Teléfono Celular:</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: (123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                    
                 
-                    <label for="mensaje">Mensaje:</label>
+                <form class="contact__form" id="miFormulario">
+
+                    <label for="nombre">
+                        Nombre <span>*</span>   
+                    </label>
+                    <input type="text" id="nombre" name="nombre" 
+                    placeholder="Ingresa tu nombre..." required
+                    autocomplete="name">
+                        
+                    <label for="email">
+                        Correo Electrónico <span>*</span>
+                    </label>
+                    <input type="email" id="email" name="email" 
+                    placeholder="Ingresa tu dirección de correo electrónico..." required autocomplete="email">
+
+                    <label for="telefono">
+                        Teléfono Celular <span>*</span>
+                    </label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de celular..." 
+                    required 
+                    autocomplete="tel">
+                    
+                    <label for="mensaje">Mensaje</label>
                     <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-                    <input type="checkbox" id="miCheckbox" name="aceptoTerminos" value="si">
-                    <label for="miCheckbox">Permito que este sitio web almacene mi información para que puedan responder a mi consulta. </label>
+                    <label for="miCheckbox">
+                        <input type="checkbox" id="miCheckbox" name="aceptoTerminos" value="si" required>
+                        Permito que este sitio web almacene mi información para que puedan responder a mi consulta. <span>*</span>
+                    </label>
 
-                    <input class="primary-button" type="submit" value="COTIZAR AHORA">
+                    <input class="primary-button--submit" type="submit" value="COTIZAR AHORA">
                 </form>
+                <a href="mailto:whyjonpapayon@gmail.com" id="trucazo">mail</a>
             </div>
             <div class="contact__map-container">
-                <div id="mapa" style="height: 400px;"></div>
+                <iframe
+                    width="100%"
+                    height="400"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBHWv1HoNtdi5-XEF2fIvUeM1EEx3d5tFI
+                    &q=Frente+a+plaza+D'Lucca,+Av.+Sta.+Margarita+4140-Local+14,+Plaza+Fontana,+45136+Zapopan,+Jal./@20.7295932,-103.4354307,19.08z/data=!4m6!3m5!1s0x8428af476841550f:0x99667e1eb8023ced!8m2!3d20.7297091!4d-103.435395!16s%2Fg%2F11trrrwvj5?entry=ttu">
+                </iframe>
                 <div class="map__text-container">
-                    <h3>Planificación sin Estrés</h3>
+                    <h3>Planificación Sin Estrés</h3>
                     <div>
                         <img src="./telefono.png" alt="">
                         <a href="tel:+523331678012">+523331678012</a>
@@ -147,6 +171,5 @@
     </footer>
     </main>
     <script src="./main.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap"></script>
 </body>
 </html>
